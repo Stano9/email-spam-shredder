@@ -35,5 +35,6 @@ const isSpam = checkSpam(email, content, {
 console.log(isSpam); // true or false
 ```
 
-Contributing 🤝
+## Contributing 🤝
+
 Feel free to open issues and pull requests to help improve the Email Spam Shredder project! Contributions are always welcome.
