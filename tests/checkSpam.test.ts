@@ -13,8 +13,8 @@ describe('checkSpam', () => {
   const invalidEmail = 'invalid-email'
   const spamContent = [
     'Congratulations! You won free Bitcoin. Claim it now!',
-    // 'Claim your Ethereum prize now!',
-    // 'You have a chance to win free Dogecoin!',
+    'Claim your Ethereum prize now!',
+    'You have a chance to win free Dogecoin!',
   ]
   const nonSpamContent = [
     'Hello, this is a regular email.',
@@ -37,9 +37,9 @@ describe('checkSpam', () => {
 
   it('should return true for an email with spam content', () => {
     // Mock validator.isEmail to return true for valid email
-    ;(validator.isEmail as jest.Mock).mockReturnValueOnce(true)
 
     spamContent.forEach((content) => {
+      ;(validator.isEmail as jest.Mock).mockReturnValueOnce(true)
       const result = checkSpam(validEmail, content)
       expect(result).toBe(true) // Spam content should return true
     })
