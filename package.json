@@ -9,10 +9,19 @@
     "test": "jest",
     "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "email",
+    "spam",
+    "filter",
+    "security"
+  ],
+  "author": "Stan",
   "license": "ISC",
-  "description": "",
+  "description": "A tool to prevent sending of spam emails.",
+  "homepage": "https://github.com/Stano9/email-spam-shredder",
+  "bugs": {
+    "url": "https://github.com/Stano9/email-spam-shredder/issues"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/validator": "^13.12.2",
